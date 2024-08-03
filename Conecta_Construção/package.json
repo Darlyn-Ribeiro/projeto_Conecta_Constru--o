@@ -1,0 +1,11 @@
+{
+  "name": "conecta",
+  "version": "1.0.0",
+  "description": "site da construtora",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Darlyn Ribeiro",
+  "license": "ISC"
+}
