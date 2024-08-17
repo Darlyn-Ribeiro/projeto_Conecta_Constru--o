@@ -358,15 +358,63 @@ footer{
 	height: 70px;
 	background-color: yellow;
 }
+/* ---------	---------------------------- */
+.formulario{
+	max-width: 1440px;
+	min-height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: orange;
+}
+.formulario form h6{
+	color: #000000;
+	font-size: small;
+	text-align: center;
+}	
 
+form{
+	width: 100%;
+	max-width: 30rem;
+	padding-bottom: 20px;
+}
+form 
+input,
+button{
+	width: 100%;
+	font: inherit;
+}
+.formulario form input{
+	border-radius: 10px;
+	margin-bottom: 1rem;
+	border: 0.125rem solid #4D4D4D;border-radius: 1.1125rem;
+	color: #4D4D4D;
+}
 
+.formulario form input[type="email"], input[type="text"],input[type="tel"] {
+	background-image: url(../assets/images/email-1572-svgrepo-com.svg);
+	background-position: 6px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 5px;
+}
+.formulario form #nome,
+.formulario form #tel,
+.formulario form #email{
+	text-align: start;
+	font-size: 16px;
+	padding-left: 50px;
+}
 
 
 /* ------------------------------------------- */
 
 footer{
 	max-width: 1440px;
-	height: 200px;
+	height: 240px;
 	background-color: #8552CB;
 	
 }
@@ -431,10 +479,7 @@ footer{
 	height: 18px;
 }
 
-.footer-list p{
-	font-size:small;
-	font-weight: bold;
-}
+
 .footer-network{
 	width: 33%;
 	height: 180px;
@@ -482,6 +527,17 @@ footer{
 .email .enviar-email .digite-email{
 	text-align: center;
 	font-size: 16px;
+}
+
+.footer .copy{
+	width: 100%;
+	height: 40px;
+	background-color: red;
+}
+footer .copy p{
+	font-size:small;
+	font-weight: bold;
+	
 }
 
 
