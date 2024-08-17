@@ -9,7 +9,7 @@ html, body{
 	height: 100%;
 }
 header{
-	max-width: 2560px;
+	max-width: 1440px;
 	height: 530px;
 	background-image: url("../assets/images/header2.jpg");
 	background-size: cover;
@@ -52,7 +52,7 @@ img{
 	height: auto;
 }
 
-nav{
+.menu-header nav{
 	width: 450px;
 	height: 40px;
 	display: flex;
@@ -140,7 +140,7 @@ i{
 
 .grid-initial{
 	max-width: 2560px;
-	width: 85%;
+	width: 90%;
 	height: 240px;
 	margin: 0 auto;
 	background-color: rgba(230, 230, 230,0.9);
@@ -210,11 +210,10 @@ p{
 }
 /*----------------------------------------grid---------------------*/
 .container_welcome{
-	width: 85%;
-	height: 250px;
+	width: 75%;
+	height: 260px;
 	/* background-color: red; */
-	display: flex;
-	justify-content: center;
+	display: flex; 
 	align-items: center;
 	margin: 0 auto;
 	position: relative;
@@ -222,11 +221,12 @@ p{
 }
 .welcome{
 	width: 100%;
-	height: 200px;
+	height: 230px;
 	/* background-color: #4BE1BE; */
 	display: flex;
 	justify-content: space-between;
-	margin: 0 auto;	
+	margin: 0 auto;
+	gap: 30px;	
 	
 }
 .image-welcome{
@@ -246,33 +246,51 @@ p{
 	opacity: 0.9;
 }
 
+.section-title{
+	width: 70%;
+	/* background-color: brown; */
+	display: flex;
+	flex-direction: column;align-items: flex-start;
+	justify-content: start;
+}
+
 
 .section-text-welcome{
-	width: 60%;
+	width: 70%;
 	height: auto;
 	/* background-color: #8552CB; */
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
+	justify-content: space-between
+	;
+	
+
 }
 
 .section-text-welcome h2{
 	color: #4BE1BE;
 	font-weight: 600;
-	font-size: 35px;
+	font-size: 25px;
 }
 .section-text-welcome span{
 	color: #000000;
 	font-weight: 600;
-	font-size: 35px;
+	font-size: 25px;
 }
 .section-text-welcome p{
 	color: #000000;
 	font-weight: 600;
 	text-align: left;
-	font-size: 11px;
+	font-size: 12px;
+}
+
+.button-section-welcome button{
+	width: 25%;
+	height: 35px;
+	background-color:#8552CB ;
+	font-size: 14px;
+
 }
 /* ---------------------grid-container---------------------------- */
 
@@ -282,38 +300,28 @@ p{
 	width: 75%;
 	margin: 0 auto;
 	grid-template-columns: auto auto auto;
-	gap: 30px;
-	align-content: space-evenly;
+	gap: 20px 50px;
+	align-content: center;
 	/* background-color: red; */
-	padding: 10px;
-	margin-bottom: 40px;
+	padding: 20px;
 	
-	
-
 }
 .sections-grid{
 	width: 100%;
-	padding: 20px;
+	padding: 0px;
 	height: 150px;
 	margin: 0 auto;
 	background-color: #d3d3d3;
 	text-align: justify;
-	justify-content: center;
+	justify-content: space-between;
 	
-}
-.sections-grid:hover{
-	background-color: #9567d4;
-	transition: 0.2 ease-in-out;
-	background: hsla(307, 93%, 84%, 1);
-	background: linear-gradient(90deg,hsla(307,93%,84%,1) 0%,hsla(256,96%,44%,1)100%);
-	background: -moz-linear-gradient(90deg,hsla(307,93%,84%,1) 0%,hsla(256,96%,44%,1)100%);
-	background: -webkit-linear-gradient(90deg,hsla(307,93%,84%,1) 0%,hsla(256,96%,44%,1)100%);
-	filter: progid:DXImageTransform.microsoft.gradient(StartColorstr="#fcb0f3",endColorstr="#3d05dd", GradientType=1);
+	
 }
 .sections-grid h5{
 	color: #9567d4;
 	text-align: center;
 	margin: 0 auto;
+	padding-top: 10px;
 }
 
 .sections-grid p{
@@ -322,6 +330,7 @@ p{
 	font-size: 70%;
 	margin-left: 10px;
 	line-height: 180%;
+	padding-top: 20px;
 }
 .buttons-grid button{
 	width: 8em;
@@ -349,3 +358,130 @@ footer{
 	height: 70px;
 	background-color: yellow;
 }
+
+
+
+
+/* ------------------------------------------- */
+
+footer{
+	max-width: 1440px;
+	height: 200px;
+	background-color: #8552CB;
+	
+}
+.footer-wrap{
+	width:80%;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+.footer-icon{
+	width: 33%;
+	height: 180px;
+	/* background-color: green; */
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+}
+.footer-icon img{
+	width: 70%;
+	height: 35px;
+}
+.footer-list{
+	width: 33%;
+	height: 180px;
+	/* background-color: blue; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.footer-list h5{
+	color: #f3f3f3;
+}
+.footer-list nav{
+	width: 90%;
+	/* background-color: goldenrod; */
+	height: 80px;
+}	
+.footer-list nav ul{
+	display: flex;
+	height: 80px;
+	flex-direction: column;
+	justify-content: space-around;
+	gap: 4px;
+	align-items: flex-start;
+	margin: 0 auto;
+}
+.footer-list nav ul li{
+	font-size:x-small;
+	list-style-type: none;
+	display: flex;
+	
+}
+.footer-list ul li:hover{
+	color:#4BE1BE;
+}
+.footer-list nav ul li img{
+	width: 18px;
+	height: 18px;
+}
+
+.footer-list p{
+	font-size:small;
+	font-weight: bold;
+}
+.footer-network{
+	width: 33%;
+	height: 180px;
+	/* background-color: orange; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.footer-network h5{
+	color: #f3f3f3;
+}	
+
+.footer-network .redes{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 7px;
+}
+
+.redes img{
+	width: 30px;
+	height: 30px;
+}
+.footer-network .email p{
+	color: #f3f3f3;
+	font-size:small;
+	font-weight: bold;
+}
+
+.footer-network .email input{
+	border-radius: 10px;
+	border: none;
+}
+
+.email .enviar-email input[type="email"] {
+	background-image: url(../assets/images/email-1572-svgrepo-com.svg);
+	background-position: 6px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.email .enviar-email .digite-email{
+	text-align: center;
+	font-size: 16px;
+}
+
+
