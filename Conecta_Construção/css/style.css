@@ -295,6 +295,12 @@ p{
 	border-radius: 20px;
 	border: none;
 }
+
+.button-section-welcome a button:hover{
+	cursor: pointer;
+	background-color: #4BE1BE;
+}
+
 /* ---------------------grid-container---------------------------- */
 
 .grid-container-wrap{
@@ -322,6 +328,7 @@ p{
 
 .sections-grid:hover{
 	transform: scale(1.05);
+	background-color: #a7ffea;
 }
 .sections-grid h5{
 	color: #9567d4;
@@ -364,6 +371,45 @@ footer{
 	height: 70px;
 	background-color: yellow;
 }
+/* ----------------------- */
+
+.botao-planeja{
+	max-width: 1440px;
+	height: 70px;
+	/* background-color: red; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.botao-planeja .planeja-left{
+	width: 33%;
+	height: 60px;
+	background-color: #8552CB;
+	border-radius: 50px 0 0 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.botao-planeja .planeja-left h4{
+	color: #E6E6E6;
+}
+.planeja-right{
+	width: 7%;
+	height:60px;
+	background-color: #4BE1BE;
+	border-radius: 0 50px 50px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.planeja-right img{
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+}
+
 /* ---------	---------------------------- */
 .formulario{
 	max-width: 1440px;
@@ -449,7 +495,8 @@ button{
 	border: none;
 	font-size: 25px;
 	font-weight: 600;
-	text-align: center;	
+	text-align: center;
+	color: #E6E6E6;
 
 }
 /* ------------------------------------------- */
